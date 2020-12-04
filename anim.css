@@ -47,6 +47,17 @@ nav {
     color: seashell;
 }
 
+.nav__link--shuif-in .nav__tekst {
+    animation: ijl-na 2s forwards;
+}
+
+@keyframes ijl-na {
+    0% { transform: translateX(-2em) rotate(0deg);}
+    50% { transform: translateX(0.6em) rotate(5deg);}
+    75% { transform: translateX(-.3em) rotate(-5deg);}
+    0% { transform: translateX(0) rotate(0deg);}
+}
+
 @media screen and (min-width: 600px) {
     .nav {
         flex-direction: row;
@@ -89,12 +100,12 @@ main {
 }
 
 .vlakje__naar-links {
-    transform: translateX(-70vw) translateY(-10vh) rotate(-90deg);
+    transform: translateX(-70vw) rotate(-90deg);
     
 }
 
 .vlakje__naar-rechts {
-    transform: translateX(70vw) translateY(10vh) rotate(90deg);
+    transform: translateX(70vw) rotate(90deg);
     
 }
 
