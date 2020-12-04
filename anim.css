@@ -74,6 +74,16 @@ nav {
     .nav__link--shuif-in {
         transform: translateY(0);
     }
+    .nav__link--shuif-in .nav__tekst {
+        animation: ijl-na-vert 2s forwards;
+    }
+    
+    @keyframes ijl-na-vert {
+        0% { transform: translateY(-1em) rotate(0deg);}
+        50% { transform: translateY(0.1em) rotate(5deg);}
+        75% { transform: translateY(-.05em) rotate(-5deg);}
+        0% { transform: translateY(0) rotate(0deg);}
+    }
 }
 
 main {
@@ -100,12 +110,12 @@ main {
 }
 
 .vlakje__naar-links {
-    transform: translateX(-70vw) rotate(-90deg);
+    transform: translateX(-70vw) rotate(-360deg);
     
 }
 
 .vlakje__naar-rechts {
-    transform: translateX(70vw) rotate(90deg);
+    transform: translateX(70vw) rotate(360deg);
     
 }
 
