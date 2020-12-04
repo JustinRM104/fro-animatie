@@ -10,14 +10,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .vlakje {
     background-color: seashell;
     width: 15vw;
     height: 15vw;
-    transform: translateX(2em)
+    transform: translateX(2em);
+    transition: transform 1s cubic-bezier(.12,.66,.64,1.09);
 }
 .animeer-knop {
     height: 1.5em;
+}
+.vlakje__naar-rechts {
+    transform: translateX(60vw) rotate(90deg);
 }
